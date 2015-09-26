@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<package>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Jurassic</id>
         <version>2.2.1</version>
@@ -18,25 +18,24 @@
 
             This version with fixes for Mono Runtime from https://github.com/mono/jurassic
         </description>
+        <summary>Jurassic is an implementation of the ECMAScript language and runtime. With fixes for Mono Runtime.</summary>
         <releaseNotes>
             The latest fixes from http://jurassic.codeplex.com/ (default:b001129861d2)
             with fixes for Mono Runtime from https://github.com/mono/jurassic
         </releaseNotes>
-        <summary>
-            Jurassic is an implementation of the ECMAScript language and runtime. With fixes for Mono Runtime.
-        </summary>
         <copyright>Copyright © Paul Bartrum 2015</copyright>
         <tags>jurassic javascript ecmascript</tags>
-        <dependencies></dependencies>
     </metadata>
     <files>
-        <file src="..\Jurassic\bin\Release\Jurassic.dll" target="lib\net35" />
-        <file src="..\Jurassic\bin\Release\Jurassic.xml" target="lib\net35" />
-        <file src="..\Jurassic\bin\Release40\Jurassic.dll" target="lib\net40" />
-        <file src="..\Jurassic\bin\Release40\Jurassic.xml" target="lib\net40" />
-        <file src="..\Jurassic\bin\Release45\Jurassic.dll" target="lib\net45" />
-        <file src="..\Jurassic\bin\Release45\Jurassic.xml" target="lib\net45" />
-        <file src="..\Jurassic\bin\Release451\Jurassic.dll" target="lib\net451" />
-        <file src="..\Jurassic\bin\Release451\Jurassic.xml" target="lib\net451" />
+        <file src="..\Jurassic\bin\Release\Jurassic.dll" target="lib\net35\Jurassic.dll" />
+        <file src="..\Jurassic\bin\Release\Jurassic.xml" target="lib\net35\Jurassic.xml" />
+        <file src="..\Jurassic\bin\Release40\Jurassic.dll" target="lib\net40\Jurassic.dll" />
+        <file src="..\Jurassic\bin\Release40\Jurassic.xml" target="lib\net40\Jurassic.xml" />
+        <file src="..\Jurassic\bin\Release45\Jurassic.dll" target="lib\net45\Jurassic.dll" />
+        <file src="..\Jurassic\bin\Release45\Jurassic.xml" target="lib\net45\Jurassic.xml" />
+        <file src="..\Jurassic\bin\Release451\Jurassic.dll" target="lib\net451\Jurassic.dll" />
+        <file src="..\Jurassic\bin\Release451\Jurassic.xml" target="lib\net451\Jurassic.xml" />
+        <file src="..\JurassicSL\Bin\Release\Jurassic.dll" target="lib\sl50\Jurassic.dll" />
+        <file src="..\JurassicWP71\Bin\Release\JurassicWP71.dll" target="lib\wp8\JurassicWP71.dll" />
     </files>
 </package>
