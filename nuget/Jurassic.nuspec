@@ -32,5 +32,11 @@
     <files>
         <file src="..\Jurassic\bin\Release\Jurassic.dll" target="lib\net35" />
         <file src="..\Jurassic\bin\Release\Jurassic.xml" target="lib\net35" />
+        <file src="..\Jurassic\bin\Release40\Jurassic.dll" target="lib\net40" />
+        <file src="..\Jurassic\bin\Release40\Jurassic.xml" target="lib\net40" />
+        <file src="..\Jurassic\bin\Release45\Jurassic.dll" target="lib\net45" />
+        <file src="..\Jurassic\bin\Release45\Jurassic.xml" target="lib\net45" />
+        <file src="..\Jurassic\bin\Release451\Jurassic.dll" target="lib\net451" />
+        <file src="..\Jurassic\bin\Release451\Jurassic.xml" target="lib\net451" />
     </files>
 </package>
