@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>Jurassic</id>
+        <version>2.2.1</version>
+        <title>Jurassic (with Mono fix)</title>
+        <authors>Paul Bartrum</authors>
+        <owners>Paul Bartrum</owners>
+        <licenseUrl>http://jurassic.codeplex.com/license</licenseUrl>
+        <projectUrl>http://jurassic.codeplex.com</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+            Jurassic is an implementation of the ECMAScript language and runtime.
+            It aims to provide the best performing and most standards-compliant
+            implementation of JavaScript for .NET. Jurassic is not intended for end-users;
+            instead it is intended to be integrated into .NET programs. If you are the
+            author of a .NET program, you can use Jurassic to compile and execute JavaScript code.
+
+            This version with fixes for Mono Runtime from https://github.com/mono/jurassic
+        </description>
+        <releaseNotes>
+            The latest fixes from http://jurassic.codeplex.com/ (default:b001129861d2)
+            with fixes for Mono Runtime from https://github.com/mono/jurassic
+        </releaseNotes>
+        <summary>
+            Jurassic is an implementation of the ECMAScript language and runtime. With fixes for Mono Runtime.
+        </summary>
+        <copyright>Copyright © Paul Bartrum 2015</copyright>
+        <tags>jurassic javascript ecmascript</tags>
+        <dependencies></dependencies>
+    </metadata>
+    <files>
+        <file src="..\Jurassic\bin\Release\Jurassic.dll" target="lib\net35" />
+        <file src="..\Jurassic\bin\Release\Jurassic.xml" target="lib\net35" />
+    </files>
+</package>
