@@ -17,6 +17,7 @@
             author of a .NET program, you can use Jurassic to compile and execute JavaScript code.
 
             This version with fixes for Mono Runtime from https://github.com/mono/jurassic
+            Source code: https://github.com/Ormikon/Jurassic
         </description>
         <summary>Jurassic is an implementation of the ECMAScript language and runtime. With fixes for Mono Runtime.</summary>
         <releaseNotes>
