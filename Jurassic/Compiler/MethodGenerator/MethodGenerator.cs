@@ -8,6 +8,8 @@ namespace Jurassic.Compiler
     /// </summary>
     internal abstract class MethodGenerator
     {
+        private static bool IsMonoRuntime = Type.GetType("Mono.Runtime") != null;
+
         /// <summary>
         /// Creates a new MethodGenerator instance.
         /// </summary>
@@ -197,7 +199,7 @@ namespace Jurassic.Compiler
                         typeof(MethodGenerator),                                // Owner type.
                         true);                                                  // Skip visibility checks.
                     // TODO: Figure out why long methods give BadImageFormatException in .NET 3.5 when generated using DynamicILInfo.
-                    if (Environment.Version.Major >= 4)
+                    if (Environment.Version.Major >= 4 && !IsMonoRuntime)
                         generator = new DynamicILGenerator(dynamicMethod);
                     else
                         generator = new ReflectionEmitILGenerator(dynamicMethod.GetILGenerator());
@@ -252,8 +254,8 @@ namespace Jurassic.Compiler
                         new Type[] { typeof(System.Diagnostics.DebuggableAttribute.DebuggingModes) });
                     reflectionEmitInfo.AssemblyBuilder.SetCustomAttribute(
                         new System.Reflection.Emit.CustomAttributeBuilder(debuggableAttributeConstructor,
-                            new object[] { 
-                                System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations | 
+                            new object[] {
+                                System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations |
                                 System.Diagnostics.DebuggableAttribute.DebuggingModes.Default }));
 
                     // Create a dynamic module.
